@@ -1,0 +1,11 @@
+diff --git a/browser/app/nsBrowserApp.cpp b/browser/app/nsBrowserApp.cpp
+--- a/browser/app/nsBrowserApp.cpp
++++ b/browser/app/nsBrowserApp.cpp
+@@ -301,6 +301,7 @@ int main(int argc, char* argv[], char* e
+   gBootstrap->XRE_EnableSameExecutableForContentProc();
+ #endif
+ 
++  fprintf(stdout, "%s\n", "HELLO WORLD!!!!!");
+   int result = do_main(argc, argv, envp);
+ 
+   gBootstrap->NS_LogTerm();
